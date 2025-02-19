@@ -28,8 +28,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 100%;
-            max-width: 400px; /* Definindo um tamanho máximo para o container */
         }
 
         #tempo {
@@ -50,6 +48,7 @@
             color: white;
             transition: background-color 0.3s ease, transform 0.2s ease;
             width: 150px;
+            display: inline-block; /* Garantir que os botões se alinhem horizontalmente */
         }
 
         button:hover {
@@ -84,7 +83,7 @@
 
         .button-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-around; /* Alinhamento com espaçamento entre os botões */
             gap: 15px;
             flex-wrap: wrap;
         }
@@ -106,9 +105,9 @@
             }
 
             .button-container {
-                flex-direction: column;
+                flex-direction: column; /* Organizar os botões em coluna */
                 gap: 20px;
-                align-items: center;
+                align-items: center; /* Centralizar os botões em telas pequenas */
             }
         }
 

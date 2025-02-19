@@ -84,6 +84,7 @@
             display: flex;
             justify-content: center;
             gap: 15px;
+            flex-wrap: wrap;
         }
 
         @media (max-width: 600px) {
@@ -94,10 +95,34 @@
             button {
                 font-size: 16px;
                 padding: 12px 25px;
+                width: 130px; /* Ajuste no tamanho do botão */
             }
 
             .cronometro-container {
                 padding: 30px 40px;
+                width: 90%; /* Ajuste na largura do container */
+            }
+
+            .button-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        /* Para telas muito pequenas, como celulares mais antigos */
+        @media (max-width: 400px) {
+            #tempo {
+                font-size: 50px; /* Reduzir ainda mais o tamanho */
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px 20px;
+                width: 120px;
+            }
+
+            .cronometro-container {
+                padding: 20px 30px;
             }
         }
     </style>
